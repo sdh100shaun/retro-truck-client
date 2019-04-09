@@ -172,7 +172,7 @@
       window.addEventListener('load', function (e) {
         updateTitle(queryParams.get('user'));
         socket.emit('join', {
-          "id": baseUrl + "/images/1.PNG",
+          "id": "https://retro-trucks.tdchodgy.co.uk" + "/images/1.PNG",
           "type": "join",
           "owner": queryParams.get('user')
         });
