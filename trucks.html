@@ -37,7 +37,7 @@
     <section class="gallery"></section>
     <script src="./socketio/socket.io.js"></script>
     <script>
-      var baseUrl = 'http://localhost';
+      var baseUrl = 'http://truck-retro-server.tdchodgy.co.uk';
       var socket = io.connect(baseUrl+":8080");
       socket.on('connect', function (data) {});
     </script>
@@ -172,7 +172,7 @@
       window.addEventListener('load', function (e) {
         updateTitle(queryParams.get('user'));
         socket.emit('join', {
-          "id": baseUrl + ":8090/images/1.PNG",
+          "id": baseUrl + "/images/1.PNG",
           "type": "join",
           "owner": queryParams.get('user')
         });
